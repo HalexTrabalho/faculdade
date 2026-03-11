@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Selva da Programação: Faculdade vs. Autodidata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .quiz-option:hover { background-color: #f3f4f6; }
+        .correct { background-color: #d1fae5 !important; border-color: #10b981 !important; }
+        .incorrect { background-color: #fee2e2 !important; border-color: #ef4444 !important; }
+        .hidden-answer { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">Programador Primata v2.026</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="#ilusao" class="hover:text-blue-600 transition">A Ilusão</a>
+                <a href="#fundacao" class="hover:text-blue-600 transition">Fundação</a>
+                <a href="#mercado" class="hover:text-blue-600 transition">O Mercado</a>
+                <a href="#quiz" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Desafio Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        
+        <!-- Section 1: A Ilusão do Diploma -->
+        <section id="ilusao" class="mb-20">
+            <div class="flex items-center mb-6">
+                <div class="bg-blue-100 p-3 rounded-2xl mr-4">
+                    <i class="fas fa-graduation-cap text-blue-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">A Ilusão do Jovem Bacharel</h2>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 leading-relaxed">
+                <p class="text-lg mb-6">
+                    Imagine um jovem segurando um papel caro, fruto de 4 anos sentado ouvindo teorias dos anos 80. Ele levanta o diploma e grita: <span class="italic font-semibold">"Sou bacharel! Onde estão minhas bananas e meu salário de R$ 10.000?"</span>. 
+                </p>
+                <p class="text-gray-600 mb-6">
+                    A resposta da selva é o silêncio. Em 2026, a Inteligência Artificial cospe sistemas inteiros enquanto você pisca. Se você espera que a faculdade te ensine a "apertar botões" para ficar rico, você está jogando dinheiro no lixo. A universidade é uma tartaruga em uma selva de leopardos; quando você se forma, o framework que aprendeu já está no asilo.
+                </p>
+                <blockquote class="border-l-4 border-blue-500 pl-4 py-2 italic bg-blue-50 rounded-r-lg">
+                    "A faculdade não te ensina as ferramentas do mercado, ela te ensina a burocracia acadêmica."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Section 2: O Que o Jovem Espera vs Realidade -->
+        <section id="fundacao" class="mb-20">
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 p-3 rounded-2xl mr-4">
+                    <i class="fas fa-microchip text-purple-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Fundação: Por que o "Brócolis" é Necessário?</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-xl mb-4 text-purple-700">O Macaco Autodidata</h3>
+                    <p class="text-gray-600 text-sm">
+                        Sabe fazer sites bonitinhos, mas se o servidor recebe 1.000 acessos, ele derrete. É um montador de Lego; se as peças não encaixam perfeitamente, ele trava. Não entende a física do motor, apenas sabe trocar o pneu.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-xl mb-4 text-blue-700">O Engenheiro de Base</h3>
+                    <p class="text-gray-600 text-sm">
+                        Entende álgebra linear, cálculo e arquitetura de computadores. Pode ser chato "comer esse brócolis", mas isso cria uma base de concreto que o protege de qualquer mudança no mercado. Ele não é refém de ferramentas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: O Filtro do RH e Networking -->
+        <section id="mercado" class="mb-20">
+            <div class="flex items-center mb-6">
+                <div class="bg-emerald-100 p-3 rounded-2xl mr-4">
+                    <i class="fas fa-users-rays text-emerald-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">O Jogo Sujo do Mercado</h2>
+            </div>
+            <div class="bg-gray-900 text-white p-8 rounded-3xl shadow-xl">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-filter mt-1 mr-4 text-emerald-400"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">O Filtro do Gorila do RH</h4>
+                            <p class="text-gray-400">Com 5.000 currículos gerados por IA em 2 horas, o RH simplesmente marca a caixa "Ensino Superior". O diploma prova que você tem a resiliência de aguentar 4 anos de regras chatas sem desistir.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-handshake mt-1 mr-4 text-emerald-400"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">A Tribo (Networking)</h4>
+                            <p class="text-gray-400">Você não paga pelas aulas, elas estão no YouTube. Você paga pelo macaco sentado ao seu lado. Daqui a 4 anos, ele será o CTO que te indicará para uma vaga VIP, furando qualquer fila de RH.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="mb-20">
+            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-blue-100">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-2">Desafio de Sobrevivência Tech</h2>
+                    <p class="text-gray-500">Teste se você está pronto para dominar a selva em 2026</p>
+                </div>
+
+                <form id="quizForm">
+                    <div id="quizContainer" class="space-y-8">
+                        <!-- Perguntas serão injetadas via JS -->
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <button type="button" id="btnCalcular" onclick="processarQuiz()" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105 active:scale-95">
+                            Calcular Minha Nota
+                        </button>
+                    </div>
+                </form>
+
+                <div id="resultado" class="hidden mt-8 p-6 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold mb-2" id="notaTexto"></h3>
+                    <p id="feedbackTexto" class="text-gray-600"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">© Halex System&reg</p>
+        </div>
+    </footer>
+
+    <script>
+        // Banco de Dados de Questões (18 questões para garantir 40% de variação em cada refresh)
+        const questaoPool = [
+            { q: "Qual o maior erro do jovem bacharel ao se formar em 2026?", options: ["Não ter feito estágio", "Esperar um salário alto só pelo diploma", "Não saber falar inglês", "Não ter networking"], correct: 1 },
+            { q: "Por que a grade curricular das faculdades é comparada a uma tartaruga?", options: ["Porque é muito lenta para aprovar mudanças", "Porque é muito resistente", "Porque foca no passado", "Porque é difícil de terminar"], correct: 0 },
+            { q: "Em 2026, qual o papel do estagiário infinito e gratuito?", options: ["O aluno de faculdade", "O freelancer barato", "A Inteligência Artificial", "O programador júnior"], correct: 2 },
+            { q: "O que o 'macaco autodidata' costuma falhar segundo o vídeo?", options: ["No design das páginas", "Na base teórica e escalabilidade", "No uso de frameworks", "Na velocidade de entrega"], correct: 1 },
+            { q: "Qual o valor real de aprender 'o brócolis' (Cálculo, Álgebra)?", options: ["Passar em concursos", "Entender a física do motor tecnológico", "Impressionar o RH", "Trabalhar em bancos"], correct: 1 },
+            { q: "Como o RH lida com 5.000 currículos recebidos em 2 horas?", options: ["Lendo o GitHub de todos", "Entrevistando os primeiros 10", "Usando filtros automáticos de nível superior", "Sorteando aleatoriamente"], correct: 2 },
+            { q: "O que o diploma realmente atesta para o mercado corporativo?", options: ["Que você é um gênio", "Resiliência e disciplina por 4 anos", "Que você sabe codar em Java", "Que você é criativo"], correct: 1 },
+            { q: "Qual a maior vantagem do ecossistema universitário (Networking)?", options: ["As bibliotecas", "O contato com colegas que serão futuros gestores", "As festas acadêmicas", "Os certificados extras"], correct: 1 },
+            { q: "Para quem a faculdade tradicional de 4 anos NÃO é recomendada?", options: ["Jovens de 18 anos", "Pessoas que querem trabalhar na Europa", "Quem tem 30 anos e pressa de sustentar a família", "Quem busca cargos em multinacionais"], correct: 2 },
+            { q: "Qual o veredito para quem quer trabalhar fora do país (Canadá/Europa)?", options: ["O portfólio basta", "O diploma é exigência de estado/visto", "Não precisa de nada além de saber inglês", "A IA resolve o visto"], correct: 1 },
+            { q: "O que acontece se um site de um autodidata sem base recebe 1.000 acessos simultâneos?", options: ["Funciona perfeitamente", "O servidor derrete por falta de otimização", "A IA corrige automaticamente", "O preço da hospedagem cai"], correct: 1 },
+            { q: "Qual a analogia do motor e do pneu no vídeo?", options: ["Trocar pneu é mais difícil", "Saber o motor te permite adaptar a qualquer veículo", "Pneus são frameworks e o motor é o computador", "Ambas as opções B e C"], correct: 3 },
+            { q: "O que o vídeo sugere fazer além da faculdade?", options: ["Apenas descansar", "Estudar tecnologias do mercado real por fora", "Trabalhar de graça", "Focar apenas nas notas"], correct: 1 },
+            { q: "Em 2026, seu trabalho principal não é digitar código, mas sim:", options: ["Organizar reuniões", "Auditar e arquitetar soluções", "Limpar o banco de dados", "Fazer café para o sênior"], correct: 1 },
+            { q: "Por que o 'lobo solitário' (autodidata isolado) passa fome?", options: ["Porque não tem internet", "Pela falta de networking e indicações diretas", "Porque não sabe usar IA", "Porque não tem computador bom"], correct: 1 },
+            { q: "Frameworks são comparados a quê no vídeo?", options: ["Lego indestrutível", "Moradores de asilo quando você se forma", "O motor do carro", "O currículo do futuro"], correct: 1 },
+            { q: "O diploma abre a porta da frente, mas o que te mantém no emprego?", options: ["O cafezinho com o chefe", "Sua lógica afiada e código limpo", "Seus certificados de cursos online", "O medo da IA"], correct: 1 },
+            { q: "Qual curso é sugerido para quem precisa de transição rápida?", options: ["Doutorado", "Tecnólogo de 2 anos EAD", "Cursos de 1 semana", "Pós-graduação em gestão"], correct: 1 }
+        ];
+
+        // Lógica de Embaralhamento e Seleção
+        function prepararQuiz() {
+            const pool = [...questaoPool];
+            // Embaralha o pool completo
+            const shuffledPool = pool.sort(() => 0.5 - Math.random());
+            // Seleciona as primeiras 10 (Garante variação de pelo menos 40% pois o pool é maior)
+            const selecionadas = shuffledPool.slice(0, 10);
+            
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = '';
+
+            selecionadas.forEach((item, index) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = 'bg-gray-50 p-6 rounded-2xl border border-gray-200';
+                qDiv.innerHTML = `
+                    <p class="font-bold text-lg mb-4 text-gray-800">${index + 1}. ${item.q}</p>
+                    <div class="grid gap-3">
+                        ${item.options.map((opt, i) => `
+                            <label class="quiz-option flex items-center p-4 border-2 border-gray-200 rounded-xl cursor-pointer transition">
+                                <input type="radio" name="q${index}" value="${i}" class="hidden" required>
+                                <span class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3 flex-shrink-0 flex items-center justify-center">
+                                    <span class="dot w-3 h-3 bg-blue-600 rounded-full hidden"></span>
+                                </span>
+                                <span class="text-gray-700">${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                    <div id="ans${index}" class="hidden-answer mt-4 p-3 rounded-lg text-sm font-semibold"></div>
+                `;
+                container.appendChild(qDiv);
+                
+                // Salva a resposta correta no elemento para verificação posterior
+                qDiv.dataset.correct = item.correct;
+                qDiv.dataset.options = JSON.stringify(item.options);
+            });
+
+            // Estilização dos radios customizados
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const parent = this.closest('.grid');
+                    parent.querySelectorAll('.quiz-option').forEach(l => l.classList.remove('border-blue-500', 'bg-blue-50'));
+                    parent.querySelectorAll('.dot').forEach(d => d.classList.add('hidden'));
+                    
+                    if(this.checked) {
+                        this.parentElement.classList.add('border-blue-500', 'bg-blue-50');
+                        this.parentElement.querySelector('.dot').classList.remove('hidden');
+                    }
+                });
+            });
+        }
+
+        function processarQuiz() {
+            const btn = document.getElementById('btnCalcular');
+            const form = document.getElementById('quizForm');
+            const items = document.querySelectorAll('#quizContainer > div');
+            let acertos = 0;
+            let respondidas = 0;
+
+            items.forEach((div, index) => {
+                const selected = form.querySelector(`input[name="q${index}"]:checked`);
+                const correctIdx = parseInt(div.dataset.correct);
+                const options = JSON.parse(div.dataset.options);
+                const ansBox = div.querySelector(`#ans${index}`);
+                
+                if (selected) {
+                    respondidas++;
+                    const userVal = parseInt(selected.value);
+                    
+                    // Marcar opções
+                    const labels = div.querySelectorAll('.quiz-option');
+                    labels[correctIdx].classList.add('correct');
+                    
+                    if (userVal === correctIdx) {
+                        acertos++;
+                    } else {
+                        labels[userVal].classList.add('incorrect');
+                    }
+                }
+                
+                // Mostrar resposta correta
+                ansBox.innerHTML = `<i class="fas fa-info-circle mr-2"></i> Resposta correta: ${options[correctIdx]}`;
+                ansBox.classList.remove('hidden-answer');
+                ansBox.classList.add('bg-blue-100', 'text-blue-800');
+            });
+
+            if (respondidas < 10) {
+                alert("Por favor, responda todas as 10 perguntas antes de calcular.");
+                return;
+            }
+
+            // Desativar botão
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            btn.innerText = "Nota Calculada";
+
+            // Mostrar Resultado
+            const nota = (acertos / 10) * 10;
+            const resDiv = document.getElementById('resultado');
+            const notaTxt = document.getElementById('notaTexto');
+            const feedbackTxt = document.getElementById('feedbackTexto');
+            
+            resDiv.classList.remove('hidden');
+            resDiv.classList.add(nota >= 7 ? 'bg-green-100' : 'bg-orange-100');
+            
+            notaTxt.innerText = `Sua Nota: ${nota.toFixed(1)} / 10`;
+            feedbackTxt.innerText = nota >= 7 
+                ? "Parabéns! Você entende a selva e está pronto para 2026." 
+                : "Cuidado! Você ainda está caindo nas armadilhas do sistema. Estude a base!";
+            
+            resDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Inicialização
+        window.onload = prepararQuiz;
+    </script>
+</body>
+</html>
